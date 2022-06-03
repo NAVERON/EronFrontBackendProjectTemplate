@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+      <groupId>com.evs.eron</groupId>
+      <artifactId>muti</artifactId>
+      <version>1.0</version>
+  </parent>
+  
+  <artifactId>common</artifactId>
+  <!-- <version>1.0</version> 一般默认版本号和parent相同 修改则增加版本标识-->
+  
+  <properties>
+    <java.version>17</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <source.version>17</source.version> 
+  </properties>
+  
+  <dependencies>
+  
+    <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+    <dependency>
+        <groupId>org.jsoup</groupId>
+        <artifactId>jsoup</artifactId>
+        <version>1.14.3</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+    <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>31.1-jre</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
+    <dependency>
+        <groupId>com.google.code.gson</groupId>
+        <artifactId>gson</artifactId>
+        <version>2.9.0</version>
+    </dependency>
+    
+  </dependencies>
+  
+  
+</project>
+
+
+
+
+
+
+
+
+

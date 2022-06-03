@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+      <groupId>com.evs.eron</groupId>
+      <artifactId>muti</artifactId>
+      <version>1.0</version>
+  </parent>
+  
+  <artifactId>cloudside</artifactId>
+  <packaging>jar</packaging>
+  
+  <properties>
+    <java.version>17</java.version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <source.version>17</source.version> 
+  </properties>
+  
+  <dependencyManagement>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-dependencies -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>2.6.3</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
+  <dependencies>
+    <!-- common usage 公共子项目引用 -->
+    <dependency>
+        <groupId>com.evs.eron</groupId>
+        <artifactId>common</artifactId>
+        <version>1.0</version>
+        <scope>compile</scope>
+    </dependency>
+  
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    
+  </dependencies>
+  
+  
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    
+    
+</project>
+
+
+
+
+
+
+
